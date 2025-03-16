@@ -1,0 +1,5 @@
+[TestClass]
+public class BookstoreInventoryTests
+{
+    
+}
