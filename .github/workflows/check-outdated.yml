@@ -1,0 +1,64 @@
+name: Check Outdated
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-vulnerabilities:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up .NET SDK
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0'  
+
+    - name: Restore dependencies for Exercise_13b
+      working-directory: ./Exercise_13b
+      run: dotnet restore
+
+    - name: List outdated packages for Exercise_13b
+      working-directory: ./Exercise_13b
+      run: |
+        # Capture the output of the command into a variable
+        output=$(dotnet list package --outdated)
+        
+        # Output the result to the GitHub Actions logs
+        echo "$output"
+        
+        # Check if any outdated packages were found
+        if echo "$output" | grep -q "has the following updates to its packages"; then
+          echo "Outdated packages found!"
+          exit 1  # Fail the workflow
+        else
+          echo "All packages are up-to-date."
+        fi
+
+    - name: Restore dependencies for Exercise_31a
+      working-directory: ./Exercise_31a
+      run: dotnet restore
+
+    - name: List outdated packages for Exercise_31a
+      working-directory: ./Exercise_31a
+      run: |
+        # Capture the output of the command into a variable
+        output=$(dotnet list package --outdated)
+        
+        # Output the result to the GitHub Actions logs
+        echo "$output"
+        
+        # Check if any outdated packages were found
+        if echo "$output" | grep -q "has the following updates to its packages"; then
+          echo "Outdated packages found!"
+          exit 1  # Fail the workflow
+        else
+          echo "All packages are up-to-date."
+        fi
