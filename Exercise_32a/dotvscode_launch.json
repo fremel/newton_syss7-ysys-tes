@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Playwright Test",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "args": [
+                "test",
+                "${workspaceFolder}/PlaywrightTutorial/bin/Debug/net8.0/PlaywrightTutorial.dll",
+                "--logger:console;verbosity=detailed"
+            ],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "HEADED": "1",
+                "PWDEBUG": "1"
+            },
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
