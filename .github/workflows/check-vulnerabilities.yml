@@ -28,8 +28,16 @@ jobs:
     - name: List vulnerable packages
       working-directory: ./Exercise_31a
       run: |
-        dotnet list package --vulnerable
-        if [ $? -ne 0 ]; then
+        # Capture the output of the command into a variable
+        output=$(dotnet list package --vulnerable)
+        
+        # Output the result to the GitHub Actions logs
+        echo "$output"
+        
+        # Check if any vulnerabilities were found
+        if [[ "$output" == *"No vulnerable packages found"* ]]; then
+          echo "No vulnerabilities found."
+        else
           echo "Vulnerabilities found!"
-          exit 1
+          exit 1  # Fail the workflow
         fi
