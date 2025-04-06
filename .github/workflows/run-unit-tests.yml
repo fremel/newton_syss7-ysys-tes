@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  check-vulnerabilities:
+  run-unit-tests:
     runs-on: ubuntu-latest
 
     steps:

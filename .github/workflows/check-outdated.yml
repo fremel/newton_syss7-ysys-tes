@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  check-vulnerabilities:
+  check-outdated:
     runs-on: ubuntu-latest
 
     steps:
