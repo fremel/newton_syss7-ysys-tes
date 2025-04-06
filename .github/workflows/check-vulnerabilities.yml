@@ -35,7 +35,7 @@ jobs:
         echo "$output"
         
         # Check if any vulnerabilities were found
-        if [[ "$output" == *"has the following vulnerable packages"* ]]; then
+        if echo "$output" | grep -q "has the following vulnerable packages"; then
           echo "Vulnerabilities found!"
           exit 1  # Fail the workflow
         else
@@ -56,7 +56,7 @@ jobs:
         echo "$output"
         
         # Check if any vulnerabilities were found
-        if [[ "$output" == *"has the following vulnerable packages"* ]]; then
+        if echo "$output" | grep -q "has the following vulnerable packages"; then
           echo "Vulnerabilities found!"
           exit 1  # Fail the workflow
         else
