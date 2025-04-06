@@ -1,0 +1,34 @@
+name: Check Vulnerabilities
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-vulnerabilities:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up .NET SDK
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0'  
+
+    - name: Restore dependencies for Exercise_31a
+      working-directory: ./Exercise_31a
+      run: dotnet restore
+
+    - name: Build the project
+      working-directory: ./Exercise_31a
+      run: dotnet build
+
+    - name: Run unit tests
+      working-directory: ./Exercise_31a
+      run: dotnet test
