@@ -27,4 +27,9 @@ jobs:
 
     - name: List vulnerable packages
       working-directory: ./Exercise_31a
-      run: dotnet list package --vulnerable
+      run: |
+        dotnet list package --vulnerable
+        if [ $? -ne 0 ]; then
+          echo "Vulnerabilities found!"
+          exit 1
+        fi
