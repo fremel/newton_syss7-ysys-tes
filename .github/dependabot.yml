@@ -4,3 +4,19 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "nuget"
+    directory: "/Exercise_03a"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "nuget"
+    directory: "/Exercise_03b"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "nuget"
+    directory: "/Exercise_03c"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "nuget"
+    directory: "/Exercise_03d"
+    schedule:
+      interval: "weekly"
