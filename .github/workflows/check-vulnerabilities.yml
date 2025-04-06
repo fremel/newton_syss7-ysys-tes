@@ -21,12 +21,12 @@ jobs:
       with:
         dotnet-version: '8.0'  
 
-    - name: Restore dependencies for Exercise_31a
-      working-directory: ./Exercise_31a
+    - name: Restore dependencies for Exercise_13b
+      working-directory: ./Exercise_13b
       run: dotnet restore
 
-    - name: List vulnerable packages for Exercise_31a
-      working-directory: ./Exercise_31a
+    - name: List vulnerable packages for Exercise_13b
+      working-directory: ./Exercise_13b
       run: |
         # Capture the output of the command into a variable
         output=$(dotnet list package --vulnerable)
@@ -42,12 +42,12 @@ jobs:
           echo "No vulnerabilities found."
         fi
 
-    - name: Restore dependencies for Exercise_13b
-      working-directory: ./Exercise_13b
+    - name: Restore dependencies for Exercise_31a
+      working-directory: ./Exercise_31a
       run: dotnet restore
 
-    - name: List vulnerable packages for Exercise_13b
-      working-directory: ./Exercise_13b
+    - name: List vulnerable packages for Exercise_31a
+      working-directory: ./Exercise_31a
       run: |
         # Capture the output of the command into a variable
         output=$(dotnet list package --vulnerable)
