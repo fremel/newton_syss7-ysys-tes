@@ -43,6 +43,7 @@ jobs:
         fi
 
     - name: Restore dependencies for Exercise_31a
+      if: always()
       working-directory: ./Exercise_31a
       run: dotnet restore
 
