@@ -22,9 +22,11 @@ jobs:
         dotnet-version: '8.0'  
 
     - name: Restore dependencies
+      working-directory: ./Exercise_31a
       run: dotnet restore
 
     - name: List vulnerable packages
+      working-directory: ./Exercise_31a
       run: dotnet list package --vulnerable
         if [ $? -ne 0 ]; then
           echo "Vulnerabilities found!"
