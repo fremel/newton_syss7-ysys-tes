@@ -1,154 +1,154 @@
 version: 2
 updates:
   - package-ecosystem: "nuget"
-    directory: "./CreateNewSolution/ExempleApp"
+    directory: "/CreateNewSolution/ExempleApp"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./CreateNewSolution/ExempleApp.Tests"
+    directory: "/CreateNewSolution/ExempleApp.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_03a/Exercise_03a"
+    directory: "/Exercise_03a/Exercise_03a"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_03a/Exercise_03a.Tests"
+    directory: "/Exercise_03a/Exercise_03a.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_03b/BookstoreService"
+    directory: "/Exercise_03b/BookstoreService"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_03b/BookstoreService.Tests"
+    directory: "/Exercise_03b/BookstoreService.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_03c/UserRegistrationService"
+    directory: "/Exercise_03c/UserRegistrationService"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_03c/UserRegistrationService.Tests"
+    directory: "/Exercise_03c/UserRegistrationService.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_03d/OrderProcessorService"
+    directory: "/Exercise_03d/OrderProcessorService"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_03d/OrderProcessorService.Tests"
+    directory: "/Exercise_03d/OrderProcessorService.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_04a/TaskManagerSolution"
+    directory: "/Exercise_04a/TaskManagerSolution"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_04a/TaskManagerSolution.Tests"
+    directory: "/Exercise_04a/TaskManagerSolution.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_13a/LoyaltyServiceProject"
+    directory: "/Exercise_13a/LoyaltyServiceProject"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_13a/LoyaltyServiceProject.Tests"
+    directory: "/Exercise_13a/LoyaltyServiceProject.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_13b/TravelAdvisor"
+    directory: "/Exercise_13b/TravelAdvisor"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_13b/TravelAdvisor.Tests"
+    directory: "/Exercise_13b/TravelAdvisor.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_14a/UserAccess"
+    directory: "/Exercise_14a/UserAccess"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_14a/UserAccess.Tests"
+    directory: "/Exercise_14a/UserAccess.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_14b/Webshop"
+    directory: "/Exercise_14b/Webshop"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_14b/Webshop.Tests"
+    directory: "/Exercise_14b/Webshop.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_14c/Webshop"
+    directory: "/Exercise_14c/Webshop"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_14c/Webshop.Tests"
+    directory: "/Exercise_14c/Webshop.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_15b/DiscountCalculator"
+    directory: "/Exercise_15b/DiscountCalculator"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_15b/DiscountCalculator.Tests"
+    directory: "/Exercise_15b/DiscountCalculator.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_21a/Weather"
+    directory: "/Exercise_21a/Weather"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_21a/Weather.Tests"
+    directory: "/Exercise_21a/Weather.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_21b/ApiTests"
+    directory: "/Exercise_21b/ApiTests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_21b/RestAPI"
+    directory: "/Exercise_21b/RestAPI"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_21c/RestAPI"
+    directory: "/Exercise_21c/RestAPI"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_22a/RestAPI"
+    directory: "/Exercise_22a/RestAPI"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_31a/MyApp"
+    directory: "/Exercise_31a/MyApp"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_31a/MyApp.Benchmark"
+    directory: "/Exercise_31a/MyApp.Benchmark"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_31a/MyApp.Benchmark/bin/Release/net8.0/12fd4550-1168-4e28-8873-49f089e40e77"
+    directory: "/Exercise_31a/MyApp.Benchmark/bin/Release/net8.0/12fd4550-1168-4e28-8873-49f089e40e77"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_31a/MyApp.Benchmark/bin/Release/net8.0/706e0f89-3243-4bec-a974-b13fcf934b03"
+    directory: "/Exercise_31a/MyApp.Benchmark/bin/Release/net8.0/706e0f89-3243-4bec-a974-b13fcf934b03"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_31a/MyApp.Benchmark/bin/Release/net8.0/976372ca-0423-4aba-bc1d-2c8d72f6eb32"
+    directory: "/Exercise_31a/MyApp.Benchmark/bin/Release/net8.0/976372ca-0423-4aba-bc1d-2c8d72f6eb32"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_31a/MyApp.Benchmark/bin/Release/net8.0/f7456984-031d-48fd-9038-14eca4ab0ba8"
+    directory: "/Exercise_31a/MyApp.Benchmark/bin/Release/net8.0/f7456984-031d-48fd-9038-14eca4ab0ba8"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_31a/MyApp.Tests"
+    directory: "/Exercise_31a/MyApp.Tests"
     schedule:
       interval: "weekly"
   - package-ecosystem: "nuget"
-    directory: "./Exercise_32a/PlaywrightTutorial"
+    directory: "/Exercise_32a/PlaywrightTutorial"
     schedule:
       interval: "weekly"
